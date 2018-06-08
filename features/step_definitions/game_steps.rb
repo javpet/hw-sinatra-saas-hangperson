@@ -1,5 +1,6 @@
 require 'uri'
 require 'cgi'
+require 'webmock'
 require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "paths"))
 
 module WithinHelpers
@@ -83,4 +84,3 @@ When /^(?:|I )press "([^\"]*)"(?: within "([^\"]*)")?$/ do |button, selector|
     click_button(button)
   end
 end
-
